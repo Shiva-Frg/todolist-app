@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  margin: 60px 0;
+}
+
+#todo-form {
+  width: 30%;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  box-shadow: 10px 10px 15px rgba(209, 217, 230, 0.6),
+    -10px -10px 15px rgba(255, 255, 255, 0.6);
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+#todo-form > input[type='text'] {
+  width: 50%;
+  -webkit-appearance: none;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 10px;
+  outline: none;
+}
+
+#todo-form > button {
+  width: 30%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: #12e2a3;
+  color: #f6f6f6;
+}
+
+label {
+  width: 14%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+label > input[type='checkbox'] {
+  -webkit-appearance: none;
+  margin: 20px 0;
+  padding: 10px 15px;
+  box-shadow: 10px 10px 15px rgba(209, 217, 230, 0.7),
+    -10px -10px 15px rgba(255, 255, 255, 1);
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+label > input[type='checkbox']:checked {
+  box-shadow: 0 0 15px rgba(209, 217, 230, 0.7),
+    0 0 15px rgba(255, 255, 255, 0.7),
+    inset 10px 10px 15px rgba(209, 217, 230, 0.7),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.7);
+}
+
+label > input[type='checkbox']::before {
+  content: '\f0eb';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+label > input[type='checkbox']:checked::before {
+  color: #12e2a3;
+}
+
+.todo-container {
+  width: 30%;
+  margin: 20px auto;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  box-shadow: 10px 10px 15px rgba(209, 217, 230, 0.6),
+    -10px -10px 15px rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+}
+
+.todo-container > input[type='checkbox'] {
+  -webkit-appearance: none;
+  padding: 12px;
+  box-shadow: 10px 10px 15px rgba(209, 217, 230, 0.7),
+    -10px -10px 15px rgba(255, 255, 255, 1);
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-container > input[type='checkbox']:checked {
+  box-shadow: 0 0 15px rgba(209, 217, 230, 0.7),
+    0 0 15px rgba(255, 255, 255, 0.7),
+    inset 10px 10px 15px rgba(209, 217, 230, 0.7),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.7);
+}
+
+.todo-container > input[type='checkbox']::before {
+  content: '\f0f3';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-container > input[type='checkbox']:checked::before {
+  color: #12e2a3;
+}
+
+.todo-container > span {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.todo-container > button {
+  width: 20%;
+  padding: 8px 5px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: #e93b81;
+  color: #f6f6f6;
+}
